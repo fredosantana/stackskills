@@ -11,13 +11,22 @@
       <thead>
         <tr align="left" bgcolor="green">
           <th width="200">Date</th>
+          <th width="200">Category</th>
           <th width="200">Issue</th>
           <th width="200">Solution</th>
           <th width="200">Resource</th>
         </tr>
       </thead>
       <tbody>
+        <td>8/13/17</td>
+        <td>HTML</td>
+        <td>In style exercise of html section, side-b container does not align properly. Bleeds over to side-a container.</td>
+        <td>Added dedicated float on side-b container.</td>
+        <td>None needed</td>
+      </tbody>
+      <tbody>
         <td>8/12/17</td>
+        <td>Git</td>
         <td>Unable to push lists and tables HTML file to Git due to remote changes
         not synching with local branch.</td>
         <td>Readme file was edited on Github instead of locally. Git pull done
@@ -31,6 +40,9 @@
         <legend>Enter issue here (form does not function at the moment)</legend>
         <label>Date</label><br>
         <input type="date" name="date" required>
+        <br><br>
+        <label>Category</label><br>
+        <input type="text" name="category">
         <br><br>
         <label>Issue</label><br>
         <input type="text" name="issue">
