@@ -1,0 +1,7 @@
+body {
+  font-family: sans-serif;
+}
+.left_side, .right_side {
+  float: left;
+  width: 50%;
+}

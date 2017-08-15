@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styles.css">
+    <title>LAP Form</title>
+  </head>
+  <body>
+    <h1>Language Assistance Protocal (LAP) Form</h1>
+    <div class="left_side">
+      <form action="POST" action="index.php">
+        <fieldset>
+          <legend>Client Info (if entering for the first time)</legend><br>
+          <div class="left_side">
+            <label>First Name</label><br>
+            <input type="text" name="first_name" required>
+          </div>
+          <div class="right_side">
+            <label>Last Name</label><br>
+            <input type="text" name="last_name" required>
+            <br><br>
+          </div>
+          <div class="left_side">
+            <label>Address</label><br>
+            <input type="text" name="address" required>
+          </div>
+          <div class="right_side">
+            <label>City</label><br>
+            <input type="text" name="name" required>
+            <br><br>
+          </div>
+          <div class="left_side">
+            <label>State</label><br>
+            <input type="text" name="name" required>
+          </div>
+          <div class="right_side">
+            <label>Zip Code</label><br>
+            <input type="number" name="zip code" min="00000" max="99999" required>
+            <br><br>
+          </div>
+          <div class="left_side">
+            <label>Phone Number</label><br>
+            <input type="text" name="name" required>
+          </div>
+          <div class="right_side">
+            <label>Last four digits of Social Security number</label><br>
+            <input type="text" name="name" required>
+            <br><br>
+          </div>
+          <div class="left_side">
+            <label>Program</label><br>
+            <select name="program">
+              <option value="Leased Housing">Leased Housing</option>
+              <option value="Housing Supports" selected>Housing Supports</option>
+              <option value="Inspections">Inspections</option>
+              <option value="Front Desk">Front Desk</option>
+            </select>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+
+    <div class="right_side">
+      <form action="POST" action="index.php">
+        <fieldset>
+          <legend>LAP Request Info</legend><br>
+          <div class="left_side">
+            <label>Date Submitted</label><br>
+            <input type="date" name="date_submitted" required>
+          </div>
+          <div class="right_side">
+            <label>Date Request Needed</label><br>
+            <input type="date" name="date_requested" required>
+            <br><br>
+          </div>
+          <div class="left_side">
+            <label>Appointment time</label><br>
+            <input type="time" name="appointment time" required>
+          </div>
+          <div class="right_side">
+            <label>Language</label><br>
+            <select name="language">
+              <option value="Spanish">Spanish</option>
+              <option value="Haitian Creole" selected>Haitian Creole</option>
+              <option value="Vietnamese">Vietnamese</option>
+              <option value="Other">Other</option>
+            </select>
+            <br><br>
+          </div>
+          <div class="left_side">
+            <label>If other selected, please note preferred language here</label><br>
+            <input type="text" name="language">
+          </div>
+          <div class="right_side">
+            <label>Request Type</label><br>
+            <input type="radio" name="request_type" value="Interpretation">Interpretation
+            <input type="radio" name="request_type" value="Translation" checked>Translation
+            <br><br><br>
+          </div>
+          <div class="left_side">
+            <label>If Interpretation selected, please select meeting type</label><br>
+            <input type="checkbox" name="meeting" value="Scheduled Appointment" checked>Scheduled Appointment
+            <input type="checkbox" name="meeting" value="Phone Call">Phone Call
+            <input type="checkbox" name="meeting" value="Briefing/Presentation" checked>Breifing/Presentation
+            <input type="checkbox" name="meeting" value="Walk-In">Walk-In
+          </div>
+
+        </fieldset>
+        <br>
+      </form>
+      <input type="submit" value="Submit" align="center">
+    </div>
+  </body>
+</html>
