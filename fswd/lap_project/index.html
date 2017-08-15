@@ -7,60 +7,64 @@
   </head>
   <body>
     <h1>Language Assistance Protocal (LAP) Form</h1>
-    <div class="left_side">
+
       <form action="POST" action="index.php">
-        <fieldset>
-          <legend>Client Info (if entering for the first time)</legend><br>
-          <div class="left_side">
-            <label>First Name</label><br>
-            <input type="text" name="first_name" required>
-          </div>
-          <div class="right_side">
-            <label>Last Name</label><br>
-            <input type="text" name="last_name" required>
-            <br><br>
-          </div>
-          <div class="left_side">
-            <label>Address</label><br>
-            <input type="text" name="address" required>
-          </div>
-          <div class="right_side">
-            <label>City</label><br>
-            <input type="text" name="name" required>
-            <br><br>
-          </div>
-          <div class="left_side">
-            <label>State</label><br>
-            <input type="text" name="name" required>
-          </div>
-          <div class="right_side">
-            <label>Zip Code</label><br>
-            <input type="number" name="zip code" min="00000" max="99999" required>
-            <br><br>
-          </div>
-          <div class="left_side">
-            <label>Phone Number</label><br>
-            <input type="text" name="name" required>
-          </div>
-          <div class="right_side">
-            <label>Last four digits of Social Security number</label><br>
-            <input type="text" name="name" required>
-            <br><br>
-          </div>
-          <div class="left_side">
-            <label>Program</label><br>
-            <select name="program">
-              <option value="Leased Housing">Leased Housing</option>
-              <option value="Housing Supports" selected>Housing Supports</option>
-              <option value="Inspections">Inspections</option>
-              <option value="Front Desk">Front Desk</option>
-            </select>
-          </div>
-        </fieldset>
+        <div class="client_side">
+          <fieldset>
+            <legend>Client Info (if entering for the first time)</legend><br>
+
+              <div class="left_side">
+                <label>First Name</label><br>
+                <input type="text" name="first_name" required>
+              </div>
+              <div class="right_side">
+                <label>Last Name</label><br>
+                <input type="text" name="last_name" required>
+                <br><br>
+              </div>
+              <div class="left_side">
+                <label>Address</label><br>
+                <input type="text" name="address" required>
+              </div>
+              <div class="right_side">
+                <label>City</label><br>
+                <input type="text" name="name" required>
+                <br><br>
+              </div>
+              <div class="left_side">
+                <label>State</label><br>
+                <input type="text" name="name" required>
+              </div>
+              <div class="right_side">
+                <label>Zip Code</label><br>
+                <input type="number" name="zip code" min="00000" max="99999" required>
+                <br><br>
+              </div>
+              <div class="left_side">
+                <label>Phone Number</label><br>
+                <input type="text" name="name" required>
+              </div>
+              <div class="right_side">
+                <label>Last four digits of Social Security number</label><br>
+                <input type="text" name="name" required>
+                <br><br>
+              </div>
+              <div class="left_side">
+                <label>Program</label><br>
+                <select name="program">
+                  <option value="Leased Housing">Leased Housing</option>
+                  <option value="Housing Supports" selected>Housing Supports</option>
+                  <option value="Inspections">Inspections</option>
+                  <option value="Front Desk">Front Desk</option>
+                </select>
+              </div>
+
+          </fieldset>
+        </div>
       </form>
     </div>
 
-    <div class="right_side">
+    <div class="request_side">
       <form action="POST" action="index.php">
         <fieldset>
           <legend>LAP Request Info</legend><br>
@@ -98,17 +102,23 @@
             <br><br><br>
           </div>
           <div class="left_side">
-            <label>If Interpretation selected, please select meeting type</label><br>
+            <label>If Interpretation selected, please select meeting type</label><br><br>
             <input type="checkbox" name="meeting" value="Scheduled Appointment" checked>Scheduled Appointment
             <input type="checkbox" name="meeting" value="Phone Call">Phone Call
             <input type="checkbox" name="meeting" value="Briefing/Presentation" checked>Breifing/Presentation
             <input type="checkbox" name="meeting" value="Walk-In">Walk-In
           </div>
+          <div class="right side">
+            <label>If Translation selected, attach document here</label>
+            <input type="file" accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf">
+
+          </div>
 
         </fieldset>
-        <br>
+
       </form>
-      <input type="submit" value="Submit" align="center">
+
     </div>
+    <input type="submit" value="Submit" align="center">
   </body>
 </html>

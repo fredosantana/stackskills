@@ -1,7 +1,13 @@
 body {
+  background: black;
   font-family: sans-serif;
+  color: white;
 }
-.left_side, .right_side {
+
+h1 {
+  text-align: center;
+}
+.client_side, .request_side, .left_side, .right_side {
   float: left;
   width: 50%;
 }
