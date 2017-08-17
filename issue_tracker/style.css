@@ -1,0 +1,12 @@
+body {
+  font-family: sans-serif;
+}
+
+table thead tr {
+  text-align: left;
+  background: green;
+}
+
+table tr th {
+  width: 200px;
+}
