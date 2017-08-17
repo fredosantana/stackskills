@@ -4,6 +4,10 @@ body {
   color: white;
 }
 
+svg {
+  color: beige;
+}
+
 h1 {
   text-align: center;
 }
