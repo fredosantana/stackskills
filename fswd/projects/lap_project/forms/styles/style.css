@@ -1,0 +1,17 @@
+body {
+  background: black;
+  font-family: sans-serif;
+  color: white;
+}
+
+svg {
+  color: beige;
+}
+
+h1 {
+  text-align: center;
+}
+.left_side, .right_side {
+  float: left;
+  width: 50%;
+}
