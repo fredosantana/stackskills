@@ -41,20 +41,19 @@
               </div>
               <div class="right_side">
                 <label>Zip Code</label><br>
-                <input id="zip" type="number" name="zip code" min="00000" max="99999" required>
+                <input id="zip" type="number" name="zip code" min="11111" max="99999" pattern="[0-9]{5}" required>
                 <button onclick="myFunction()">OK</button>
-                <p id="demo"></p>
-                
-                <br><br>
+                <p id="zmessage"></p>
               </div>
               <div class="left_side">
                 <label>Phone Number</label><br>
-                <input type="text" name="name" required>
+                <input type="number" name="name" required>
               </div>
               <div class="right_side">
                 <label>Last four digits of Social Security number</label><br>
-                <input type="text" name="name" required>
-                <br><br>
+                <input id="ss" type="number" name="ss" min="1111" max="9999" pattern="[0-9]{4}" required>
+                <button onclick="thisFunction()">OK</button>
+                <p id="ssmessage"></p>
               </div>
               <div class="left_side">
                 <label>Program</label><br>
