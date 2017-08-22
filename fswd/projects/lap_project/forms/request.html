@@ -2,10 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="../styles/bootstrap.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
     <link rel="stylesheet" href="../styles/style.css">
     <link href="https://fonts.googleapis.com/css?family=Questrial|Zilla+Slab+Highlight" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/bootstrap.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>LAP Form</title>
   </head>
   <body>
@@ -17,12 +18,20 @@
         <li><a href="#">Requests Pending</a></li>
         <li><a href="#">LAP Reports</a></li>
       </ul>
+      <ul class="nav navbar-nav ml-auto input-group">
+        <input type="text" class="form-control" placeholder="Search for...">
+        <span class="input-group-btn">
+          <button class="btn btn-secondary" type="button">Go!</button>
+        </span>
+      </ul>
+
     </nav>
+
     <br>
     <h2 class="heading">Language Assistance Protocal (LAP) Form</h2>
     <br>
       <form action="POST" action="index.php">
-        <div class="client_side">
+        <div class="form-group client_side">
           <fieldset>
             <legend>Client Info (if entering for the first time)</legend><br>
 
@@ -79,8 +88,9 @@
       </form>
     </div>
 
-    <div class="request_side">
-      <form action="POST" action="index.php">
+    <form action="POST" action="index.php">
+      <div class="form-group request_side">
+
         <fieldset>
           <legend>LAP Request Info</legend><br>
           <div class="left_side">
@@ -131,9 +141,9 @@
 
         </fieldset>
 
-      </form>
+      </div>
 
-    </div>
+    </form>
     <input type="submit" value="Submit" align="center">
     <script src="../scripts/script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
