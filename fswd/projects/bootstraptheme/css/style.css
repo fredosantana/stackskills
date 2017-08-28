@@ -25,6 +25,10 @@
   margin-bottom: 60px;
 }
 
+.jumbotron-sub {
+  padding: 0 60px 40px 60px;
+}
+
 .navbar{
   margin: 0;
   color: #fff;
