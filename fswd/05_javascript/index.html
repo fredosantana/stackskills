@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Javascript | Variables, Arrays, & Objects</title>
+  </head>
+  <body>
+    <div id="test"></div>
+      <script>
+        // OUTPUT
+        //console.log('YESSIR!!!!')
+        //document.write('YESSIR!!!!');
+        //alert('YESSIR!!!!');
+        //document.getElementById('test').innerHTML = 'YESSIR!!!!!';
+
+        // VARIABLES
+        var x = 5;
+        var y = 10;
+        //console.log(x + y);
+        var person = 'Wil Santana';
+        //console.log('My name is ' + person);
+        var a = 1, b = 2, c = 3;
+        //console.log(c);
+
+        // ARRAYS
+        //var animals = ['Platypus', 'Honey Badger', 'Giraffe'];
+        var animals = new Array('Platypus', 'Honey Badger', 'Giraffe');
+        //console.log(animals[1]);
+        animals[3] = 'Rattlesnake';
+        animals.push('Kangaroo');
+        //console.log(animals);
+        //console.log(animals.sort());
+
+        var person = [];
+        person['name'] = 'Wayne Allison';
+        person['age'] = 53;
+        person['country'] = "Jamaica";
+        //console.log(person);
+
+        var car = {make: 'Mazzeratti', model: 'Bugati', year: '3000'};
+        //console.log(car.make);
+
+        var cars = [
+          {
+            make: 'Mazzeratti',
+            model: 'Bugati',
+            year: '3000'
+          },
+          {
+            make: 'Lamborghini',
+            model: 'Zucchini',
+            year: '-789'
+          },
+          {
+            make: 'Lexus',
+            model: 'Nexus',
+            year: '38975982345873'
+          }
+        ];
+        console.log(cars[2].make);
+      </script>
+
+  </body>
+</html>
