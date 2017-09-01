@@ -5,11 +5,11 @@
 */
 
 function myFunction() {
-  var inpObj = document.getElementById("zip");
+  var inpObj = document.getElementById('zip');
     if (inpObj.checkValidity() == false) {
-      document.getElementById("demo").innerHTML = inpObj.validationMessage;
+      document.getElementById('demo').innerHTML = inpObj.validationMessage;
     } else {
-      document.getElementById("demo").innerHTML = "Zip OK";
+      document.getElementById('demo').innerHTML = "Zip OK";
     }
 }
 
@@ -32,8 +32,15 @@ function thisFunction() {
 function submitForm() {
   var firstName = document.getElementById('firstName').value;
   var lastName = document.getElementById('lastName').value;
-  var email = document.getElementById('email').value;
-  alert("My first name is " + firstName + " and my last name is " + lastName + ". My email address is " + email + ".");
+  var lastName = document.getElementById('lastName').value;
+  var address = document.getElementById('address').value;
+  var city = document.getElementById('city').value;
+  var state = document.getElementById('state').value;
+  var zip = document.getElementById('zip').value;
+  var phone = document.getElementById('phone').value;
+  var ss = document.getElementById('ss').value;
+  var program = document.getElementById('program').value;
+  alert(firstName + ' ' + lastName + ' | ' + address + ' ' + city + ', ' + state + ' ' + zip + ' ' + phone + ' ' + ss + ' | ' + program);
 }
 
 document.getElementById('clientInfo').addEventListener('submit', submitForm, false);
