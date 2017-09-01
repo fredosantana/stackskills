@@ -2,10 +2,10 @@
 function sayWord() {
   alert('Word!');
 }
+*/
 
-function sayWord(anything = 'What\'s', everything = 'Up!'){
-  alert(anything + ' ' + everything);
+function sayWord(anything = 'What\'s', everything = 'Up', something = "Wil!" ){
+  alert(anything + '-' + everything + '-' + something);
 }
 
-sayWord('Word','Son!');
-*/
+sayWord("BOOM", "SHAKA", "LAKA!!!!");
