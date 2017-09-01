@@ -17,64 +17,58 @@
         <li><a href="#">Requests Pending</a></li>
         <li><a href="#">LAP Reports</a></li>
       </ul>
-      <ul class="nav navbar-nav ml-auto input-group">
-        <input type="text" class="form-control" placeholder="Search for...">
-        <span class="input-group-btn">
-          <button class="btn btn-secondary" type="button">Go!</button>
-        </span>
-      </ul>
 
     </nav>
 
     <br>
     <h2 class="heading">Language Assistance Protocal (LAP) Form</h2>
     <br>
-      <form action="POST" action="index.php">
+      <form id="clientInfo">
         <div class="form-group client_side">
           <fieldset>
             <legend>Client Info (if entering for the first time)</legend><br>
 
               <div class="left_side">
                 <label>First Name</label><br>
-                <input type="text" name="first_name" required>
+                <input type="text" name="first_name" id="first_name" required>
               </div>
               <div class="right_side">
                 <label>Last Name</label><br>
-                <input type="text" name="last_name" required>
+                <input type="text" name="last_name" id="last_name" required>
                 <br><br>
               </div>
               <div class="left_side">
                 <label>Address</label><br>
-                <input type="text" name="address" required>
+                <input type="text" name="address" id="address" required>
               </div>
               <div class="right_side">
                 <label>City</label><br>
-                <input type="text" name="name" required>
+                <input type="text" name="city" id="city" required>
                 <br><br>
               </div>
               <div class="left_side">
                 <label>State</label><br>
-                <input type="text" name="name" required>
+                <input type="text" name="state" id="state" required>
               </div>
               <div class="right_side">
                 <label>Zip Code</label><br>
-                <input id="zip" type="number" name="zip code" min="00000" max="99999" required>
+                <input id="zip" type="number" name="zip code" id="zip_code" min="00000" max="99999" required>
                 <button onclick="myFunction()">OK</button>
                 <p id="demo"></p>
               </div>
               <div class="left_side">
                 <label>Phone Number</label><br>
-                <input type="number" name="name" required>
+                <input type="number" name="phone" id="phone" required>
               </div>
               <div class="right_side">
                 <label>Last four digits of Social Security number</label><br>
-                <input id="ss" type="number" name="ss" min="1111" max="9999" pattern="[0-9]{4}" required>
+                <input id="ss" type="number" name="ss" id="ss" min="1111" max="9999" pattern="[0-9]{4}" required>
                 <button onclick="thisFunction()">OK</button>
                 <p id="ssmessage"></p>
               </div>
               <div class="left_side">
                 <label>Program</label><br>
-                <select name="program">
+                <select name="program" id="program">
                   <option value="Leased Housing">Leased Housing</option>
                   <option value="Housing Supports" selected>Housing Supports</option>
                   <option value="Inspections">Inspections</option>

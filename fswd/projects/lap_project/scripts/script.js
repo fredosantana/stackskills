@@ -28,3 +28,12 @@ function thisFunction() {
 }
 
 */
+
+function submitForm() {
+  var firstName = document.getElementById('firstName').value;
+  var lastName = document.getElementById('lastName').value;
+  var email = document.getElementById('email').value;
+  alert("My first name is " + firstName + " and my last name is " + lastName + ". My email address is " + email + ".");
+}
+
+document.getElementById('clientInfo').addEventListener('submit', submitForm, false);
