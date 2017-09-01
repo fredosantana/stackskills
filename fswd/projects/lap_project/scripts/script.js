@@ -40,7 +40,7 @@ function submitForm() {
   var phone = document.getElementById('phone').value;
   var ss = document.getElementById('ss').value;
   var program = document.getElementById('program').value;
-  alert(firstName + ' ' + lastName + ' | ' + address + ' ' + city + ', ' + state + ' ' + zip + ' ' + phone + ' ' + ss + ' | ' + program);
+  alert('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program);
 }
 
 document.getElementById('clientInfo').addEventListener('submit', submitForm, false);
