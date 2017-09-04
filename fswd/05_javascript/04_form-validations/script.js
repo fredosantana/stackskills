@@ -8,7 +8,11 @@ function register(e){
   var message = document.getElementById('message');
 
   if(name == '' || email == '' || password == '' || password2 == '') {
+<<<<<<< HEAD
     message.className = "alert alert-danger";
+=======
+    message.className = "alert alert-danger"
+>>>>>>> javascript
     message.innerHTML = 'Please fill out all fields';
   } else {
       if(name.length < 3){
@@ -26,7 +30,11 @@ function register(e){
               message.innerHTML = 'Passwords do no match';
             } else {
               //SUCCESS
+<<<<<<< HEAD
               message.className = "alert alert-success";
+=======
+              message.className = "alert alert-success"
+>>>>>>> javascript
               message.innerHTML = name + " is registered with email " + email;
           }
         }
