@@ -1,42 +1,33 @@
 $(document).ready(function(){
-  /*
-  alert(1);
   $('.p1').hide();
-  $('p').show();
-
-  $('#touchIt').click(function(){
-    //alert('BAM!!!');
-    $('.p1').toggle();
-    //$('.p2').show('Test');
-  });
-
+  $('.p2').hide();
   $('#touchIt').dblclick(function(){
-    //alert('BAM!!!');
     $('.p1').toggle();
     $('.p2').toggle();
   });
-  $('#rectangle').hover(function(){
-    $(this).text("HOLLA!!!");
+
+  $('#rectangle1').hover(function(){
+    $(this).html('<h1>Now move the mouse away.</h1>');
   }, function() {
-      $(this).text("COME BACK!!");
+      $(this).html('<h1 id="oldSchool">Here\'s an Atari-looking font!</h1>');
     }
   );
 
-  $('#rectangle').mouseenter(function() {
-    $(this).text('VANDALAYY!!!');
+  $('#rectangle2').mouseenter(function() {
+    $(this).html('<h1>Now move the mouse away</h1>');
     $(this).mouseout(function() {
-      $(this).text('SAY VANDALAY!!!');
+      $(this).html('<h1 id="barcode">Here\'s a random barcode.</h1>');
     });
   });
 
-  $('#rectangle').mousedown(function() {
-    $(this).text('NOW TAKE YOUR SMELLY FINGER OFF THE MOUSE!!!!!');
+  $('#rectangle3').mousedown(function() {
+    $(this).html('<h1>Now take your smelly finger off the mouse</h1>');
     $(this).mouseup(function() {
-      $(this).text('AND CLICK IT DOWN AGAIN!!!');
+      $(this).html('<h1 id="strangeFont">Here\'s some funky looking font!</h1>');
     });
   });
-  */
-  $('#rectangle2').mousemove(function(event){
+
+  $('#rectangle4').mousemove(function(event){
     var proteinShake = "Mouse position - ";
     proteinShake += event.pageX + " " + event.pageY;
     $('#alarmClock').html('<div>' + proteinShake + '</div>');

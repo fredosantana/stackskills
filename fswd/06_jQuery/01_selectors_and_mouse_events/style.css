@@ -1,5 +1,37 @@
-#rectangle2 {
-  background: green;
-  width: 600px;
+#rectangle1 {
+  background: blue;
+  width: 400px;
   height: 200px;
+}
+
+#rectangle2 {
+  background: purple;
+  width: 400px;
+  height: 200px;
+  color: white;
+}
+
+#barcode {
+  font-family: 'Libre Barcode 39 Text', cursive;
+}
+
+#strangeFont {
+  font-family: 'Monoton', cursive;
+}
+
+#oldSchool {
+  font-family: 'Press Start 2P', cursive;
+}
+
+#rectangle3 {
+  background: yellow;
+  width: 400px;
+  height: 200px;
+}
+
+#rectangle4 {
+  background: green;
+  width: 400px;
+  height: 200px;
+  color: white;
 }
