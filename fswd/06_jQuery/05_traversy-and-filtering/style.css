@@ -1,0 +1,7 @@
+.container *{
+  display: block;
+  border: 2px solid grey;
+  color: grey;
+  padding: 5px;
+  margin: 15px;
+}
