@@ -14,5 +14,20 @@ $(document).ready(function(){
     });
     $('#frostedFlakes').text(cat);
   });
-  // Select Event
+  // Select Events
+  $(':input').select(function(){
+    $('#frostedFlakes').text('You chose something!').show();
+  });
+  // Submit Event
+  $('#appleCinnamonCherrios').submit(function(e) {
+    e.preventDefault();
+    $('#frostedFlakes').text('Form Submitted');
+  });
+  // Key Up and Key Down Events
+  $('#appleCinnamonCherrios input').keydown(function(){
+    $('#frostedFlakes').text('You are typing');
+    $(this).keyup(function() {
+      $('#frostedFlakes').text('');
+    });
+  });
 });
