@@ -1,0 +1,99 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+}
+
+body {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,e5e5e5+100;White+3D */
+	background: #556B2F; /* Old browsers */
+	background: -moz-linear-gradient(top,  #556B2F 0%, #BBC4AC 100%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top,  #556B2F 0%,#BBC4AC 100%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom,  #556B2F 0%,#BBC4AC 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#556B2F', endColorstr='#BBC4AC',GradientType=0 ); /* IE6-9 */
+}
+
+.jumbotron-billboard .img {
+  margin-bottom: 0px;
+  opacity: 0.2;
+  color: #fff;
+  background: #000 url("../img/cover.jpg") center center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  overflow: hidden;
+  position:absolute;
+  top:0;left:0;
+  z-index:1;
+}
+
+.jumbotron {
+  position:relative;
+  padding:50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.jumbotron .container {
+  z-index:2;
+  position:relative;
+  z-index:2;
+}
+
+h1 {
+	font-family: 'Paprika', cursive;
+	text-align: center;
+	color:#666666;
+	font-size:50px;
+	margin-bottom:30px;
+}
+
+.container {
+	width: 635px;
+	margin: 50px auto 0 auto;
+	position:relative;
+}
+
+.cycle-slideshow {
+  width: 640px;
+	height: 426px;
+}
+.cycle-slideshow img {
+	padding: 15px;
+	border: 1px solid #ccc;
+	background-color: #eee;
+}
+
+#nav {
+	list-style-type:none;
+	z-index:150;
+}
+#nav li a {
+	display:block;
+	width:58px;
+	height:102px;
+	text-indent:-9999px;
+	outline:none;
+}
+
+#prev a {
+	background:url(../img/prev.png);
+	width:58px;
+	height:102px;
+	position:absolute;
+	top:240px;
+	left:-70px;
+}
+#next a {
+	background:url(../img/next.png);
+	width:58px;
+	height:102px;
+	position:absolute;
+	top:240px;
+	right:-110px;
+}
+#next a:hover {
+	background:url(../img/next_hover.png);
+}
+#prev a:hover {
+	background:url(../img/prev_hover.png);
+}
