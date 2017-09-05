@@ -1,0 +1,6 @@
+.shape, .shape2 {
+  width: 100px;
+  height: 100px;
+  background: black;
+  position: relative
+}
