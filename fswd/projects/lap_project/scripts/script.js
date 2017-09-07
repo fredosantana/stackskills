@@ -47,19 +47,22 @@ function clientForm(e) {
     // BLANK FIELDS
     message.className = "alert alert-danger";
     message.innerHTML = 'Please fill form completely';
-
   } else {
       if(firstName.length < 3 && lastName.length < 3) {
         message.className = "alert alert-danger";
-        message.innerHTML = 'Name must be at least 3 characters';
-      }
-      else {
-        // SUCCESS
-        message.className = "alert alert-success";
-        message.innerHTML = ('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program);
-      }
+        message.innerHTML = 'First and last name must be at least 3 characters';
+      } else {
+        if(zip.length < 5 || zip.length > 5) {
+          message.className = "alert alert-danger";
+          message.innerHTML = 'Zip code must be five numbers';
+        }       else {
+                // SUCCESS
+                message.className = "alert alert-success";
+                message.innerHTML = ('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program);
+              }
+            }
 
-  }
+      }
 }
 
 document.getElementById('clientInfo').addEventListener('submit', clientForm, false);
