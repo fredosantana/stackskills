@@ -29,9 +29,10 @@ function thisFunction() {
 
 */
 
-function submitForm() {
+function clientForm(e) {
+  e.preventDefault();
+
   var firstName = document.getElementById('firstName').value;
-  var lastName = document.getElementById('lastName').value;
   var lastName = document.getElementById('lastName').value;
   var address = document.getElementById('address').value;
   var city = document.getElementById('city').value;
@@ -40,7 +41,16 @@ function submitForm() {
   var phone = document.getElementById('phone').value;
   var ss = document.getElementById('ss').value;
   var program = document.getElementById('program').value;
-  alert('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program);
+  var message = document.getElementById('message')
+
+  if (firstName == '' || lastName == '' || address == '' || city == '' || state == '' || zip == '' || phone == '' || ss == '' || program == '') {
+    message.className = "alert alert-danger";
+    message.innerHTML = 'Please fill form completely';
+
+  } else {
+    message.className = "alert alert-success";
+    message.innerHTML = ('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program);
+  }
 }
 
-document.getElementById('clientInfo').addEventListener('submit', submitForm, false);
+document.getElementById('clientInfo').addEventListener('submit', clientForm, false);

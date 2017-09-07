@@ -23,46 +23,48 @@
     <br>
     <h2 class="heading">Language Assistance Protocal (LAP) Form</h2>
     <br>
+
       <form id="clientInfo">
+        <div class="alert" id="message"></div>
         <div class="form-group client_side">
           <fieldset>
             <legend>Client Info (if entering for the first time)</legend><br>
 
               <div class="left_side">
                 <label>First Name</label><br>
-                <input type="text" name="firstName" id="firstName" required>
+                <input type="text" name="firstName" id="firstName">
               </div>
               <div class="right_side">
                 <label>Last Name</label><br>
-                <input type="text" name="lastName" id="lastName" required>
+                <input type="text" name="lastName" id="lastName" >
                 <br><br>
               </div>
               <div class="left_side">
                 <label>Address</label><br>
-                <input type="text" name="address" id="address" required>
+                <input type="text" name="address" id="address" >
               </div>
               <div class="right_side">
                 <label>City</label><br>
-                <input type="text" name="city" id="city" required>
+                <input type="text" name="city" id="city" >
                 <br><br>
               </div>
               <div class="left_side">
                 <label>State</label><br>
-                <input type="text" name="state" id="state" required>
+                <input type="text" name="state" id="state" >
               </div>
               <div class="right_side">
                 <label>Zip Code</label><br>
-                <input type="number" name="zipCode" id="zip" min="00000" max="99999" required>
+                <input type="number" name="zipCode" id="zip" min="00000" max="99999" >
                 <button onclick="myFunction()">OK</button>
                 <p id='demo'></p>
               </div>
               <div class="left_side">
                 <label>Phone Number</label><br>
-                <input type="text" name="phone" id="phone" required>
+                <input type="text" name="phone" id="phone" >
               </div>
               <div class="right_side">
                 <label>Last four digits of Social Security number</label><br>
-                <input id="ss" type="number" name="ss" id="ss" min="1111" max="9999" pattern="[0-9]{4}" required>
+                <input id="ss" type="number" name="ss" id="ss" min="1111" max="9999" pattern="[0-9]{4}" >
                 <button onclick="thisFunction()">OK</button>
                 <p id="ssmessage"></p>
               </div>
@@ -88,16 +90,16 @@
           <legend>LAP Request Info</legend><br>
           <div class="left_side">
             <label>Date Submitted</label><br>
-            <input type="date" name="date_submitted" required>
+            <input type="date" name="date_submitted" >
           </div>
           <div class="right_side">
             <label>Date Request Needed</label><br>
-            <input type="date" name="date_requested" required>
+            <input type="date" name="date_requested" >
             <br><br>
           </div>
           <div class="left_side">
             <label>Appointment time</label><br>
-            <input type="time" name="appointment time" required>
+            <input type="time" name="appointment time" >
           </div>
           <div class="right_side">
             <label>Language</label><br>
