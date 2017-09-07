@@ -41,15 +41,24 @@ function clientForm(e) {
   var phone = document.getElementById('phone').value;
   var ss = document.getElementById('ss').value;
   var program = document.getElementById('program').value;
-  var message = document.getElementById('message')
+  var message = document.getElementById('message');
 
   if (firstName == '' || lastName == '' || address == '' || city == '' || state == '' || zip == '' || phone == '' || ss == '' || program == '') {
+    // BLANK FIELDS
     message.className = "alert alert-danger";
     message.innerHTML = 'Please fill form completely';
 
   } else {
-    message.className = "alert alert-success";
-    message.innerHTML = ('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program);
+      if(firstName.length < 3 && lastName.length < 3) {
+        message.className = "alert alert-danger";
+        message.innerHTML = 'Name must be at least 3 characters';
+      }
+      else {
+        // SUCCESS
+        message.className = "alert alert-success";
+        message.innerHTML = ('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program);
+      }
+
   }
 }
 
