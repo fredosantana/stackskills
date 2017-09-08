@@ -1,13 +1,12 @@
-function register(e){
+/*function register(e){
   e.preventDefault();
 
-  var name = document.getElementById('name').value;
-  var email = document.getElementById('email').value;
-  var password = document.getElementById('password').value;
-  var password2 = document.getElementById('password2').value;
+  var uname = document.getElementById('uname').value;
+  var psw = document.getElementById('psw').value;
+  var psw2 = document.getElementById('password2').value;
   var message = document.getElementById('message');
 
-  if(name == '' || email == '' || password == '' || password2 == '') {
+  if(uname == '' || psw == '' || psw2 == '') {
     message.className = "alert alert-danger";
     message.className = "alert alert-danger"
     message.innerHTML = 'Please fill out all fields';
@@ -36,7 +35,7 @@ function register(e){
     }
   }
 
-document.getElementById('regForm').addEventListener('submit', register, false);
+document.getElementById('regForm').addEventListener('submit', register, false);*/
 
 
 function clientForm(e) {
