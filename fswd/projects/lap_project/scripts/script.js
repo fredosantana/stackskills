@@ -1,41 +1,33 @@
-/*function register(e){
+function register(e){
   e.preventDefault();
 
   var uname = document.getElementById('uname').value;
   var psw = document.getElementById('psw').value;
-  var psw2 = document.getElementById('password2').value;
+  var psw2 = document.getElementById('psw2').value;
   var message = document.getElementById('message');
 
   if(uname == '' || psw == '' || psw2 == '') {
-    message.className = "alert alert-danger";
     message.className = "alert alert-danger"
     message.innerHTML = 'Please fill out all fields';
   } else {
-      if(name.length < 3){
+      if(uname.length < 3){
         message.className = "alert alert-danger";
         message.innerHTML = 'Name must be at least 3 characters';
       } else {
-          var atpos = email.indexOf("@");
-          var dotpos = email.lastIndexOf(".");
-          if(atpos < 1 || dotpos < atpos + 2 || dotpos + 2 >= email.length) {
-            message.className = "alert alert-danger";
-            message.innerHTML = 'Plese use valid email';
-          } else {
-            if(password != password2){
+            if(psw != psw2){
               message.className = "alert alert-danger";
-              message.innerHTML = 'Passwords do no match';
+              message.innerHTML = 'Passwords do not match';
             } else {
               //SUCCESS
               message.className = "alert alert-success";
               message.className = "alert alert-success"
-              message.innerHTML = name + " is registered with email " + email;
+              message.innerHTML = uname + " successfully signed-in!";
           }
         }
       }
     }
-  }
 
-document.getElementById('regForm').addEventListener('submit', register, false);*/
+
 
 
 function clientForm(e) {
@@ -77,5 +69,5 @@ function clientForm(e) {
           }
         }
       }
-
-document.getElementById('clientInfo').addEventListener('submit', clientForm, false);
+document.getElementById('regForm').addEventListener('submit', register, false);
+//document.getElementById('clientInfo').addEventListener('submit', clientForm, false);
