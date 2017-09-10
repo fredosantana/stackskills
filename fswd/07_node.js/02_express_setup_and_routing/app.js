@@ -12,7 +12,7 @@ app.use(function(req, res, next){
   next();
 });
 
-// app.set('view engine', 'pug');
+//app.set('view engine', 'pug');
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -24,12 +24,16 @@ app.get('/', function(req, res){
   res.render('index', {
     title: 'HI EVERYBODY!!!',
     showTitle: true,
-    people: ['Wayne', 'Wil', 'Lucas']
+    household: ['Wayne', 'Wil', 'Lucas']
   });
 });
 
 app.get('/nugget', function(req, res){
-  res.send('test');
+  res.render('nugget');
+});
+
+app.get('/booboo', function(req, res){
+  res.render('booboo');
 });
 
 app.listen(3000);
