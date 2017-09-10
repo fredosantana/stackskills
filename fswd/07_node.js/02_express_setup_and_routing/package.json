@@ -9,7 +9,9 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "body-parser": "*",
+    "ejs": "^2.5.7",
     "express": "*",
-    "body-parser": "*"
+    "pug": "^2.0.0-rc.4"
   }
 }

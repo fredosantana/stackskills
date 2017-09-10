@@ -1,6 +1,7 @@
 var express = require('express');
 var bodyParser = require('body-parser');
 var path = require('path');
+//var pug = require('pug');
 
 var port = 3000;
 
@@ -11,16 +12,24 @@ app.use(function(req, res, next){
   next();
 });
 
+// app.set('view engine', 'pug');
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views'));
+
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static(path.join(__dirname, 'pages')));
+// app.use(express.static(path.join(__dirname, 'pages')));
 
 app.get('/', function(req, res){
-  res.send('Hello WORLD!');
+  res.render('index', {
+    title: 'HI EVERYBODY!!!',
+    showTitle: true,
+    people: ['Wayne', 'Wil', 'Lucas']
+  });
 });
 
 app.get('/nugget', function(req, res){
-  res.send('NUGGET!');
+  res.send('test');
 });
 
 app.listen(3000);
