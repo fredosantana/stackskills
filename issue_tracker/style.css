@@ -10,3 +10,7 @@ table thead tr {
 table tr th {
   width: 200px;
 }
+
+button {
+  text-align:center;
+}
