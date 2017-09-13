@@ -10,6 +10,12 @@ function requestForm(e) {
   var phone = document.getElementById('phone').value;
   var ss = document.getElementById('ss').value;
   var program = document.getElementById('program').value;
+  var date_submitted = document.getElementById('date_submitted').value;
+  var date_requested = document.getElementById('date_requested').value;
+  var appointment_time = document.getElementById('appointment_time').value;
+  var language = document.getElementById('language').value;
+  var request_type = document.getElementById('request_type').value;
+  var interpretation = document.getElementById('interpretation').value;
   var message = document.getElementById('message');
 
   if (firstName == '' || lastName == '' || address == '' || city == '' || state == '' || zip == '' || phone == '' || ss == '' || program == '') {

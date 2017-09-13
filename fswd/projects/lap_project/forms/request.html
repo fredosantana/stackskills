@@ -95,7 +95,7 @@
           </div>
           <div class="right_side">
             <label>Language</label><br>
-            <select name="language">
+            <select id="language" name="language">
               <option value="Spanish">Spanish</option>
               <option value="Haitian Creole" selected>Haitian Creole</option>
               <option value="Vietnamese">Vietnamese</option>
@@ -109,16 +109,16 @@
           </div>
           <div class="right_side">
             <label>Request Type</label><br>
-            <input type="radio" name="request_type" value="Interpretation">Interpretation
-            <input type="radio" name="request_type" value="Translation" checked>Translation
+            <input type="radio" name="intepretation" id="request_type" value="Interpretation">Interpretation
+            <input type="radio" name="translation" id="request_type" value="Translation" checked>Translation
             <br><br><br>
           </div>
           <div class="left_side">
             <label>If Interpretation selected, please select meeting type</label><br><br>
-            <input type="checkbox" name="meeting" value="Scheduled Appointment" checked>Scheduled Appointment
-            <input type="checkbox" name="meeting" value="Phone Call">Phone Call
-            <input type="checkbox" name="meeting" value="Briefing/Presentation" checked>Breifing/Presentation
-            <input type="checkbox" name="meeting" value="Walk-In">Walk-In
+            <input type="checkbox" name="appointment" id="interpretation" value="Scheduled Appointment" checked>Scheduled Appointment
+            <input type="checkbox" name="phone_call" id="interpretation" value="Phone Call">Phone Call
+            <input type="checkbox" name="presentation" id="interpretation" value="Briefing/Presentation" checked>Breifing/Presentation
+            <input type="checkbox" name="walk_in" id="interpretation" value="Walk-In">Walk-In
           </div>
           <div class="right side">
             <label>If Translation selected, attach document here</label>
