@@ -24,7 +24,7 @@
     <h2 class="heading">Language Assistance Protocal (LAP) Form</h2>
     <br>
 
-      <form id="clientInfo">
+      <form id="requestForm">
         <div class="alert" id="message"></div>
         <div class="form-group client_side">
           <fieldset>
@@ -75,29 +75,23 @@
                   <option value="Front Desk">Front Desk</option>
                 </select>
               </div>
-              <button onclick="clientForm">OK</button>
           </fieldset>
         </div>
-      </form>
-    </div>
-
-    <form action="POST" action="index.php">
-      <div class="form-group request_side">
-
-        <fieldset>
+        <div class="form-group request_side">
+          <fieldset>
           <legend>LAP Request Info</legend><br>
           <div class="left_side">
             <label>Date Submitted</label><br>
-            <input type="date" name="date_submitted" >
+            <input type="date" id="date_submitted" name="date_submitted" >
           </div>
           <div class="right_side">
             <label>Date Request Needed</label><br>
-            <input type="date" name="date_requested" >
+            <input type="date" id="date_requested" name="date_requested" >
             <br><br>
           </div>
           <div class="left_side">
             <label>Appointment time</label><br>
-            <input type="time" name="appointment time" >
+            <input type="time" id="appointment_time" name="appointment_time" >
           </div>
           <div class="right_side">
             <label>Language</label><br>
@@ -131,10 +125,8 @@
             <input type="file" accept=".xlsx,.xls,image/*,.doc, .docx,.ppt, .pptx,.txt,.pdf">
           </div>
         </fieldset>
-      </div>
-    </form>
-    <input type="submit" value="Submit" align="center">
-
+        <button onclick="requestForm">OK</button>
+      </form>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

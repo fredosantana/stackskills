@@ -1,4 +1,4 @@
-function clientForm(e) {
+function requestForm(e) {
   e.preventDefault();
 
   var firstName = document.getElementById('firstName').value;
@@ -21,9 +21,9 @@ function clientForm(e) {
         message.className = "alert alert-danger";
         message.innerHTML = 'First and last name must be at least 3 characters';
       } else {
-          if(zip.length < 5 || zip.length > 5) {
+          if(zip.length < 5 && zip.length < 5) {
             message.className = "alert alert-danger";
-            message.innerHTML = 'Zip code must be five numbers';
+            message.innerHTML = 'Zip code must be five digits';
           } else {
               if(ss.length < 4 || ss.length > 4) {
                 message.className = "alert alert-danger";
@@ -38,4 +38,4 @@ function clientForm(e) {
         }
       }
 
-document.getElementById('clientInfo').addEventListener('submit', clientForm, false);
+document.getElementById('requestForm').addEventListener('submit', requestForm, false);
