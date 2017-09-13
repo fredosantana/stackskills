@@ -2,53 +2,82 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>LAP Home Page</title>
-    <link rel="stylesheet" href="styles/login.css">
+    <title>LAP Login</title>
     <link href="https://fonts.googleapis.com/css?family=Questrial|Zilla+Slab+Highlight" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+    <link rel="stylesheet" href="styles/login.css">
   </head>
   <body>
   <br>
-  <h2 class="heading">Language Assistance Protocal Sign-In</h2>
-
-<div class="container">
-  <div class="row header">
-    <h1>CONTACT US &nbsp;</h1>
-    <h3>Fill out the form below to learn more!</h3>
-  </div>
-  <div class="row body">
-    <form id="regForm">
-      <ul>
-
-        <li>
-          <p class="left">
-            <label><b>Username</b></label>
-            <input type="text" placeholder="Your MBHP email address" name="uname" id="uname">
-          </p>
-          <p class="pull-right">
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw">
-            <label><b>Password</b></label>
-            <input type="password" placeholder="Confirm Password" name="psw2" id="psw2">
-
-          </p>
-        </li>
-
-
-        <li>
-          <input class="btn btn-submit" type="submit" value="Submit" />
-          <small>or press <strong>enter</strong></small>
-        </li>
-        <div id="message">
+  <form id="regForm">
+    <div id="message">
         </div>
 
+    <div class="login-wrap">
+      <div class="login-html">
+        <div class="title">
+          <h1>LAPN Login</h1>
+        </div>
+        <br>
+        <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Sign In</label>
+    		<input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+    		<div class="login-form">
+    			<div class="sign-in-htm">
+    				<div class="group">
+    					<label for="user" class="label">Username</label>
+    					<input id="uname" type="text" class="input">
+    				</div>
+    				<div class="group">
+    					<label for="pass" class="label">Password</label>
+    					<input id="psw" type="password" class="input" data-type="password">
+    				</div>
+            <div class="group">
+              <label for="pass" class="label">Password</label>
+              <input id="psw2" type="password" class="input" data-type="password">
+            </div>
 
-      </ul>
-    </form>
-  </div>
-</div>
+    				<div class="group">
+    					<input id="check" type="checkbox" class="check" checked>
+    					<label for="check"><span class="icon"></span> Keep me Signed in</label>
+    				</div>
+    				<div class="group">
+    					<input type="submit" class="button" value="Sign In">
+    				</div>
+    				<div class="hr"></div>
+    				<div class="foot-lnk">
+    					<a href="#forgot">Forgot Password?</a>
+    				</div>
+    			</div>
+    			<div class="sign-up-htm">
+    				<div class="group">
+    					<label for="user" class="label">Username</label>
+    					<input id="user" type="text" class="input">
+    				</div>
+    				<div class="group">
+    					<label for="pass" class="label">Password</label>
+    					<input id="pass" type="password" class="input" data-type="password">
+    				</div>
+    				<div class="group">
+    					<label for="pass" class="label">Repeat Password</label>
+    					<input id="pass" type="password" class="input" data-type="password">
+    				</div>
+    				<div class="group">
+    					<label for="pass" class="label">Email Address</label>
+    					<input id="pass" type="text" class="input">
+    				</div>
+    				<div class="group">
+    					<input type="submit" class="button" value="Sign Up">
+    				</div>
+    				<div class="hr"></div>
+    				<div class="foot-lnk">
+    					<label for="tab-1">Already Member?</a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </div>
+  </form>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
