@@ -18,16 +18,16 @@ function requestForm(e) {
   var interpretation = document.getElementById('interpretation').value;
   var message = document.getElementById('message');
 
-  if (firstName == '' || lastName == '' || address == '' || city == '' || state == '' || zip == '' || phone == '' || ss == '' || program == '') {
+  if (firstName == '' || lastName == '' || address == '' || city == '' || state == '' || zip == '' || phone == '' || ss == '' || program == '' || date_submitted == '' || date_requested == '' || appointment_time == '' || language == '' || request_type == '' || interpretation == '') {
     // BLANK FIELDS
     message.className = "alert alert-danger";
     message.innerHTML = 'Please fill form completely';
   } else {
-      if(firstName.length < 3 && lastName.length < 3) {
+      if(firstName.length < 3 || lastName.length < 3) {
         message.className = "alert alert-danger";
         message.innerHTML = 'First and last name must be at least 3 characters';
       } else {
-          if(zip.length < 5 && zip.length < 5) {
+          if(zip.length < 5 || zip.length < 5) {
             message.className = "alert alert-danger";
             message.innerHTML = 'Zip code must be five digits';
           } else {
@@ -37,7 +37,7 @@ function requestForm(e) {
               } else {
             // SUCCESS
                 message.className = "alert alert-success";
-                message.innerHTML = ('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program);
+                alert('Client name: ' + firstName + ' ' + lastName + '\nAddress: ' + address + ' ' + city + ', ' + state + ' ' + zip + '\nPhone number: ' + phone + '\nID number: ' + ss + '\nProgram name: ' + program + '\nDate Submitted: ' + date_submitted + '\nDate Requested: ' + date_requested + '\nAppointment Time: ' + appointment_time + '\nLanguage: ' + language + '\nRequest Type: ' + request_type + '\nMeeting Type: ' + interpretation);
              }
             }
           }
