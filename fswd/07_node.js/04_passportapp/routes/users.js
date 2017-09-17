@@ -43,7 +43,27 @@ router.post('/register', function(req, res){
       password2: password2
     });
   } else {
-      console.log('Success!');
+      var newUser = {
+  			name: name,
+  			email: email,
+  			username:username,
+  			password: password
+  		}
+
+      db.users.insert(newUser, function(err, doc) {
+        if(err){
+          res.send(err);
+        } else {
+          console.log('User added');
+          // Success message
+          req.flash('success', 'You are registered and can now log in');
+          // Redirect after register
+
+
+          res.location('/');
+          res.redirect('/');
+        }
+      });
   }
 });
 module.exports = router;
